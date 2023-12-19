@@ -2,39 +2,73 @@
 <html>
 <head>
     <title>RPG Stat Grinder</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-r4NyPdEFnEFsKPVl/G6EL6GfB8x40KzC2yLsz1lMq/p6UwYJTKR4pCehcMdi0YmR" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            padding-top: 20px;
+        }
+        #stats {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .progress {
+            background-color: #e9ecef;
+            border-radius: 0.25rem;
+            margin-bottom: 15px;
+        }
+        .progress-bar {
+            background-color: #007bff;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        #grindButton {
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>RPG Stat Grinder</h1>
     <div id="stats">
         <p>Strength: <span id="strength">0</span></p>
         <div class="progress">
-            <div id="strengthBar" class="progress-bar"></div>
+            <div id="strengthBar" class="progress-bar" role="progressbar"></div>
         </div>
 
         <p>Agility: <span id="agility">0</span></p>
         <div class="progress">
-            <div id="agilityBar" class="progress-bar"></div>
+            <div id="agilityBar" class="progress-bar" role="progressbar"></div>
         </div>
 
         <p>Intelligence: <span id="intelligence">0</span></p>
         <div class="progress">
-            <div id="intelligenceBar" class="progress-bar"></div>
+            <div id="intelligenceBar" class="progress-bar" role="progressbar"></div>
         </div>
 
         <p>Endurance: <span id="endurance">0</span></p>
         <div class="progress">
-            <div id="enduranceBar" class="progress-bar"></div>
+            <div id="enduranceBar" class="progress-bar" role="progressbar"></div>
         </div>
 
         <p>Luck: <span id="luck">0</span></p>
         <div class="progress">
-            <div id="luckBar" class="progress-bar"></div>
+            <div id="luckBar" class="progress-bar" role="progressbar"></div>
         </div>
     </div>
-    <button id="grindButton">Grind</button>
+    <button id="grindButton" class="btn btn-primary">Grind</button>
 
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js" integrity="sha384-oesi62hXabiOx4qu8pdxDn3a4p34pYjN8/tny0tnxhv4dWfF7FIMhCU79ywqEfl1" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
-
